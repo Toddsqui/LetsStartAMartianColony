@@ -1,0 +1,443 @@
+html,
+body,
+#map,
+#container{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+section {
+  color:  #362c2a;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/a/a9/Domica_Cave_22.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 30px;
+  font-family: Gentium, Georgia, serif;
+}
+
+#cover .text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 8.1em;
+
+}
+
+h1 {
+  font-size: 7vw;
+  font-family: 'Open Sans', Arial, sans serif;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Open Sans', Arial, sans serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 5vw;
+  color: #442233;
+}
+
+a {
+  text-decoration: none;
+  color: #778866;
+}
+
+a:hover {
+  color: #362c2a;
+}
+
+#container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+}
+
+.right {
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+
+.left {
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+.center {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.home {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.next {
+  position: fixed;
+  top: 20px;
+  right: 70px;
+  z-index: 100;
+  padding: 0;
+}
+
+.back {
+  position: fixed;
+  top: 20px;
+  right: 105px;
+  z-index: 100;
+  padding: 0;
+}
+
+#p8 .next,
+#cover .next {
+  right: 55px;
+}
+
+#p8 .back {
+  right: 90px;
+}
+
+#cover {
+  color: white;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/f/f1/Mars_mission.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#p8 {
+  padding: 0;
+}
+
+#p1{
+  background: url(https://upload.wikimedia.org/wikipedia/commons/b/b7/Mars_Excursion_Module.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+
+#p1 h2{
+  color:#a1af95;
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
+#label {
+  padding-top: 5vh;
+  padding-bottom: 0vh;
+  padding-left: 20vw;
+  font-style: italic;
+}
+
+#Audrey{
+  font-family:cursive;
+  color:#335555;
+  line-height:1em;
+  font-size:2vw;
+}
+
+#chart {
+  padding-bottom: 2vh;
+}
+
+
+hr {
+  padding: 1em;
+  border: none;
+  border-top: medium double;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#box {
+  padding: 10px;
+  border: 5px solid #C9AF50;
+  margin: 0;
+  background-color: #404D60;
+  color: #EEEEDD;
+  opacity: .6;
+  z-index: 100;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 500px;
+}
+
+#newquote{
+  padding: 10px;
+  border: 5px solid #886622;
+  margin: 0;
+  color: #ccccaa;
+  position:absolute;
+  bottom: 60px;
+  right: 75px;
+  width: 250px;
+}
+
+@media (max-width: 560px) {
+    #newquote {
+      bottom: 40px;
+    }
+}
+
+@media (max-width: 475px) {
+    #newquote {
+      bottom: 20px;
+    }
+}
+
+@media (max-width: 460px) {
+    #newquote {
+      display:none;
+    }
+}
+
+#p3{
+color: white;
+  background: url(http://www.kurzweilai.net/images/space-colony.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#p3 ul {
+  padding:0;
+  background-color: #EEEEDD;
+}
+
+#p3 li {
+  color: #404D60;
+  padding: 3vw;
+  margin:0;
+  width: 100%;
+  overflow-y: auto;
+}
+
+#p3 h2{
+}
+
+#Alice{
+  font-family: Papyrus, Copperplate;
+  background-color:#005555;
+  opacity:.7;
+  padding:10px;
+  color:#bbddcc;
+  font-weight:bold;
+  font-size:4vh;
+  line-height:6vh;
+}
+
+#addpadding{
+  padding-bottom:45px;
+}
+
+#p6 h2{
+  color:#a1af95;
+}
+
+#p6{
+  background-color:#442233;
+  color:#EEEEDD;
+}
+
+#side-by-side{
+  display:flex;
+   align-items:center;
+  justify-content:center;
+  max-width:100%;
+  position:relative;
+  padding:2vh;
+
+}
+
+.flexquote{
+  padding:10px;
+  border: 5px solid #a1af95;
+  margin: 10px;
+  background-color: #aa9944;
+  color: #EEEEDD;
+  width:100%;
+  display:block;
+}
+
+#shadow:hover {
+   -webkit-box-transform: 0px 0px 4px 2px #788913;
+  text-shadow: 0 0 10px #B04E38, 0 0 5px #EEEEDD;
+}
+
+#animation:hover {
+  -webkit-box-transform: 0px 0px 4px 2px #D50E0E;
+  -webkit-filter: blur(5px); -moz-filter: blur(5px);
+}
+
+#p5{
+  background: url(https://upload.wikimedia.org/wikipedia/commons/a/a4/GreatWall6.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width:100%;
+}
+
+#p5 .text{
+  background: rgba(161,175,149,.7);
+  padding:3vw;
+}
+
+
+#sentenceone {
+  color:#005555;
+  font-style: italic;
+}
+
+#sentencetwo{
+  font-weight:bold;
+}
+
+#sentencethree{
+  font-family: cursive, "Brush Script MT", Papyrus;
+}
+
+.text {
+  color: white;
+  max-width: 100vw;
+  font-size: 6vh;
+  line-height: 5vh;
+  overflow: auto;
+}
+
+#p9 {
+  overflow: hidden;
+}
+
+#p9 p {
+  text-align: center;
+}
+
+#movement {
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  padding-top:50px;
+}
+
+@media (max-width: 650px) {
+    #movement {
+        font-size: 50px;
+      padding-top: none;
+    }
+}
+
+#balancetop{
+  width:100%;
+  background-color:#ccccaa;
+  padding: 10px;
+}
+#balanceright{
+  position:absolute;
+  text-align:left;
+  width:25vw;
+  bottom:0;
+  color:#ccccaa;
+  background-color:#005555;
+  padding:10px;
+  }
+
+#balanceleft{
+  position:absolute;
+  text-align:left;
+  width:25vw;
+  right:30px;
+  color:#ccccaa;
+  background-color:#005555;
+  padding:10px;
+}
+
+/*Stack at 170px*/
+
+#p10{
+  background-color:#443322;
+}
+
+@media (max-width:700px){
+  #balanceleft{position:relative; width:100%; right:0;}
+}
+
+@media (max-width:700px){
+  #balanceright{position:relative; width:100%;}
+}
+
+#p11{
+  background-color:#181009;
+  color:#ccccaa;
+}
+
+#p11 .text{
+  text-align:center;
+  font-size:1.7vw;
+  line-height:2vw;
+  font-family: Georgia, "Times New Roman";
+}
+
+#p11 h2{text-align:center;
+        font-size: 9em;
+        color:#F1F8F4;
+        line-height:1vw;
+        font-family:Impact, Charcoal, sans-serif;
+}
+
+#p12 p{
+  padding-bottom:60px;
+}
+
+#p13{
+  background-color: #442233;
+  color: #ddddbb;
+}
+
+#p13 p{
+ padding-bottom: 60px;
+}
+
+#p13 h2{
+  color: #a1af95;
+  font-family: "Lucida Console", Verdana;
+}
+
+/*#p14: needs media queries for the triangles or no?
